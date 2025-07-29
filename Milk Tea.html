@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu - Isekai Boba</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">ISEKAI BOBA</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="#">Rewards</a>
+    </nav>
+    <div class="cart-icon" id="cart-toggle">
+      🛍️ <span id="cart-count">0</span>
+    </div>
+    <button class="nav-btn">Sign In</button>
+  </header>
+
+  <section class="menu-section">
+    <h1></h1>
+    <div class="menu-container">
+      
+      <!-- Sidebar Categories -->
+      <aside class="menu-sidebar">
+        <ul>
+          <li><a href="#milk-tea">Milk Tea</a></li>
+          <li><a href="#fruit-tea">Fruit Tea</a></li>
+          <li><a href="#coffee">Coffee</a></li>
+          <li><a href="#specialty">Specialty</a></li>
+        </ul>
+      </aside>
+  
+      <!-- Menu Items -->
+      <div class="menu-content">
+  
+        <!-- Milk Tea -->
+        <div id="milk-tea" class="menu-category">
+          <h2>Milk Tea</h2>
+          <div class="menu-grid">
+            <div class="menu-item">
+              <h3>Taro Milk Tea</h3>
+              <p>$4.75</p>
+              <button class="add-to-cart" data-name="Taro Milk Tea" data-price="4.75">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+              <h3>Brown Sugar Milk Tea</h3>
+              <p>$5.25</p>
+              <button class="add-to-cart" data-name="Brown Sugar Milk Tea" data-price="5.25">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+              <h3>Classic Milk Tea</h3>
+              <p>$4.50</p>
+              <button class="add-to-cart" data-name="Classic Milk Tea" data-price="4.50">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Fruit Tea -->
+        <div id="fruit-tea" class="menu-category">
+          <h2>Fruit Tea</h2>
+          <div class="menu-grid">
+            <div class="menu-item">
+              <h3>Lychee Green Tea</h3>
+              <p>$4.50</p>
+              <button class="add-to-cart" data-name="Lychee Green Tea" data-price="4.50">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+              <h3>Passionfruit Black Tea</h3>
+              <p>$4.75</p>
+              <button class="add-to-cart" data-name="Passionfruit Black Tea" data-price="4.75">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+              <h3>Mango Oolong Tea</h3>
+              <p>$5.00</p>
+              <button class="add-to-cart" data-name="Mango Oolong Tea" data-price="5.00">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Coffee -->
+        <div id="coffee" class="menu-category">
+          <h2>Coffee</h2>
+          <div class="menu-grid">
+            <div class="menu-item">
+              <h3>Vietnamese Iced Coffee</h3>
+              <p>$5.25</p>
+              <button class="add-to-cart" data-name="Vietnamese Iced Coffee" data-price="5.25">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+              <h3>Caramel Macchiato</h3>
+              <p>$5.75</p>
+              <button class="add-to-cart" data-name="Caramel Macchiato" data-price="5.75">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+              <h3>Cold Brew</h3>
+              <p>$4.95</p>
+              <button class="add-to-cart" data-name="Cold Brew" data-price="4.95">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Specialty -->
+        <div id="specialty" class="menu-category">
+          <h2>Specialty</h2>
+          <div class="menu-grid">
+            <div class="menu-item">
+              <h3>Galaxy Lychee Lemonade</h3>
+              <p>$5.95</p>
+              <button class="add-to-cart" data-name="Galaxy Lychee Lemonade" data-price="5.95">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+              <h3>Strawberry Matcha Latte</h3>
+              <p>$6.25</p>
+              <button class="add-to-cart" data-name="Strawberry Matcha Latte" data-price="6.25">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+              <h3>Wintermelon Cheese Foam</h3>
+              <p>$5.85</p>
+              <button class="add-to-cart" data-name="Wintermelon Cheese Foam" data-price="5.85">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>  
+
+  <!-- Slide-out Cart Panel -->
+  <div id="cart-panel" class="cart-panel hidden">
+    <h2>Your Cart</h2>
+    <ul id="cart-items-panel"></ul>
+    <p>Total: $<span id="cart-total-panel">0.00</span></p>
+    <button onclick="closeCart()">Close</button>
+  </div>
+
+  <!-- Drink Modifier Modal -->
+  <div id="modifier-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="modal-drink-name">Customize Your Drink</h2>
+      <form id="modifier-form">
+        <label>
+          Size:
+          <select name="size" required>
+            <option value="Tall">Tall</option>
+            <option value="Grande">Grande</option>
+            <option value="Venti">Venti</option>
+          </select>
+        </label>
+
+        <label>
+          Milk:
+          <select name="milk">
+            <option value="Whole Milk">Whole Milk</option>
+            <option value="Almond Milk">Almond Milk</option>
+            <option value="Oat Milk">Oat Milk</option>
+          </select>
+        </label>
+
+        <label>
+          Sweetness:
+          <select name="sweetness">
+            <option value="Regular">Regular</option>
+            <option value="Less Sweet">Less Sweet</option>
+            <option value="No Sugar">No Sugar</option>
+          </select>
+        </label>
+
+        <fieldset>
+          <legend>Toppings ($0.50 each):</legend>
+          <div class="toppings-section">
+            <div class="topping-item">
+              <label for="boba">Boba</label>
+              <input type="number" id="boba" name="boba" min="0" max="4" value="0">
+            </div>
+            <div class="topping-item">
+              <label for="lychee-jelly">Lychee Jelly</label>
+              <input type="number" id="lychee-jelly" name="lychee-jelly" min="0" max="4" value="0">
+            </div>
+            <div class="topping-item">
+              <label for="pudding">Pudding</label>
+              <input type="number" id="pudding" name="pudding" min="0" max="4" value="0">
+            </div>
+            <div class="topping-item">
+              <label for="grass-jelly">Grass Jelly</label>
+              <input type="number" id="grass-jelly" name="grass-jelly" min="0" max="4" value="0">
+            </div>
+          </div>
+          
+        </fieldset>
+
+        <label>
+          Notes:
+          <textarea name="notes" placeholder="Any special requests?"></textarea>
+        </label>
+
+        <button type="submit">Add to Cart</button>
+        <button type="button" onclick="closeModal()">Cancel</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 ISEKAI BOBA</p>
+  </footer>
+
+  <!-- JS File -->
+  <script src="script.js"></script>
+</body>
+</html>
+
