@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Favicon for browser tab -->
+  <link rel="icon" href="images\Native-Resolution\isekai boba.png" type="image/x-icon">
+
+    <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu - Isekai Boba</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+<a href="index.html" class="logo">
+  <img src="images\Native-Resolution\isekai boba.png" alt="Isekai Boba Logo" class="logo-img" />  ISEKAI BOBA
+</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="https://www.google.com/maps/place/ISEKAI+BOBA/@26.0103267,-80.2454262,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9a9ad155e80e5:0x5880ee907ff5966!8m2!3d26.0103267!4d-80.2454262!16s%2Fg%2F11sg38zdw4?entry=ttu&g_ep=EgoyMDI1MDcyNy4wIKXMDSoASAFQAw%3D%3D" class="find-store-btn">
+        Find Store</a>
+    </nav>
+    <div class="cart-icon" id="cart-toggle">
+      🛍️ <span id="cart-count">0</span>
+    </div>
+    <button class="nav-btn">Sign In</button>
+    
+  </header>
+
+  <section class="menu-section">
+    <h1>Our Menu</h1>
+    <div class="menu-container">
+      <!-- Category Buttons -->
+      <div class="menu-categories">
+        <button class="category-btn active" data-category="all">All</button>
+        <button class="category-btn" data-category="milk-tea">Milk Tea Flavors</button>
+        <button class="category-btn" data-category="Fruity Flavors">Fruity Flavors</button>
+        <button class="category-btn" data-category="Smoothies/Slushies">Smoothies/Slushies</button>
+        <button class="category-btn" data-category="Brown Sugar series">Brown Sugar series</button>
+      </div>
+    
+      <!-- Menu Grid -->
+      <div class="menu-grid">
+        <!-- Milk Tea Category -->
+        <div class="menu-item" data-category="milk-tea">
+         <img src="images/Native-Resolution/IsekaiBoba_ThaiMilkTea.jpg" alt="milk-tea" class="drink-img">
+         <h2>Thai Milk Tea</h2>
+         <p>$6.39</p>
+         <button class="add-to-cart" data-name="Thai Milk Tea" data-price="6.39">Add to Cart</button>
+       </div>
+
+        <div class="menu-item" data-category="milk-tea">
+          <img src="images\Native-Resolution\IsekaiBoba_MatchaLatte.jpg" alt="milk-tea" class="drink-img">
+          <h2>Matcha Latte</h2>
+          <p>$6.39</p>
+          <button class="add-to-cart" data-name="Matcha Latte" data-price="6.39">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="milk-tea">
+          <img src="images\Native-Resolution\IsekaiBoba_HoneyDew.jpg" alt="milk-tea" class="drink-img">
+          <h2>Honeydew</h2>
+          <p>$6.39</p>
+          <button class="add-to-cart" data-name="Honeydew" data-price="6.39">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="milk-tea">
+          <img src="images\Native-Resolution 2\Original_Milk_Tea-min-Photoroom.png" alt="milk-tea" class="drink-img">
+          <h2>Peach Milk Tea</h2>
+          <p>$6.39</p>
+          <button class="add-to-cart" data-name="Peach Milk Tea" data-price="6.39">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="milk-tea">
+          <img src="images\Native-Resolution 2\Coffee_Milk_Tea-min-Photoroom.png" alt="milk-tea" class="drink-img">
+          <h2>Coffee Milk Tea</h2>
+          <p>$6.39</p>
+          <button class="add-to-cart" data-name="Coffee Milk Tea" data-price="6.39">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="milk-tea">
+          <img src="images/Native-Resolution/IsekaiBoba_TaroMilkTea.jpg" alt="milk-tea" class="drink-img">
+          <h2>Taro Milk Tea</h2>
+          <p>$6.39</p>
+          <button class="add-to-cart" data-name="Taro Milk Tea" data-price="6.39">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="milk-tea">
+          <img src="images\Native-Resolution 2\Strawberry_Milk_Tea-min-Photoroom.png" alt="milk-tea" class="drink-img">
+          <h2>Strawberry Milk Tea</h2>
+          <p>$6.39</p>
+          <button class="add-to-cart" data-name="Strawberry Milk Tea" data-price="6.39">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="milk-tea">
+          <img src="images\Native-Resolution\IsekaiBoba_ButterflyMilkTea.jpg" alt="milk-tea" class="drink-img">
+          <h2>Butterfly Milk Tea</h2>
+          <p>$6.39</p>
+          <button class="add-to-cart" data-name="Butterfly Milk Tea" data-price="6.39">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="milk-tea">
+          <img src="images/Native-Resolution/IsekaiBoba_MangoMilkTea.jpg" alt="milk-tea" class="drink-img">
+          <h2>Mango Milk</h2>
+          <p>$6.39</p>
+          <button class="add-to-cart" data-name="Mango Milk" data-price="6.39">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="milk-tea">
+          <img src="images\Native-Resolution 2\Blue Coco.png" alt="milk-tea" class="drink-img">
+          <h2>Blue Coco</h2>
+          <p>$6.39 </p>
+          <button class="add-to-cart" data-name="Blue Coco" data-price="6.39">Add to Cart</button>
+        </div>        
+
+       <!-- Fruity Flavors -->
+        <div class="menu-item" data-category="Fruity Flavors">
+          <img src="images/Native-Resolution/IsekaiBoba_PassionFruitGreenTeA.jpg" alt="milk-tea" class="drink-img">
+          <h2>Passion Fruit Green Tea</h2>
+          <p>$6.39 </p>
+          <button class="add-to-cart" data-name="Passion Fruit Green Tea" data-price="6.39">Add to Cart</button>
+        </div>
+    
+        <div class="menu-item" data-category="Fruity Flavors">
+          <img src="images\Native-Resolution 2\Orange_Green_Tea-min-Photoroom.png" alt="milk-tea" class="drink-img">
+          <h2>Orange Green Tea</h2>
+          <p>$6.39 </p>
+          <button class="add-to-cart" data-name="Orange Green Tea" data-price="6.39">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="Fruity Flavors">
+          <img src="images/Native-Resolution/IsekaiBoba_PassionFruitLemon.jpg" alt="milk-tea" class="drink-img">
+          <h2>Passion Fruit Lemon</h2>
+          <p>$6.39 </p>
+          <button class="add-to-cart" data-name="Passion Fruit Lemon" data-price="6.39">Add to Cart</button>
+        </div>
+        
+        <div class="menu-item" data-category="Fruity Flavors">
+          <img src="images/Native-Resolution/IsekaiBoba_PassionFruitOrange.jpg" alt="milk-tea" class="drink-img">
+          <h2>Passion Fruit Orange</h2>
+          <p>$6.39 </p>
+          <button class="add-to-cart" data-name="Passion Fruit Orange" data-price="6.39">Add to Cart</button>
+        </div>
+        
+        <div class="menu-item" data-category="Fruity Flavors">
+          <img src="images\Native-Resolution\IsekaiBoba_MysticLycheeLemonade.jpg" alt="milk-tea" class="drink-img">
+          <h2>Mystic Lychee Lemonade</h2>
+          <p>$6.39 </p>
+          <button class="add-to-cart" data-name="Mystic Lychee Lemonade" data-price="6.39">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="Fruity Flavors">
+          <img src="images\Native-Resolution\IsekaiBoba_KiwiJuice.jpg" alt="milk-tea" class="drink-img">
+          <h2>Kiwi Juice</h2>
+          <p>$6.39 </p>
+          <button class="add-to-cart" data-name="Kiwi Juice" data-price="6.39">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="Fruity Flavors">
+          <img src="images\Native-Resolution 2\Orange_Green_Tea-min-Photoroom.png" alt="milk-tea" class="drink-img">
+          <h2>Lychee Green Tea</h2>
+          <p>$6.39 </p>
+          <button class="add-to-cart" data-name="Lychee Green Tea" data-price="6.39">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="Fruity Flavors">
+          <img src="images\Native-Resolution 2\Orange_Green_Tea-min-Photoroom.png" alt="milk-tea" class="drink-img">
+          <h2>Mango Green Tea</h2>
+          <p>$6.39 </p>
+          <button class="add-to-cart" data-name=">Mango Green Tea" data-price="6.39">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="Fruity Flavors">
+          <img src="images\Native-Resolution 2\Strawberry_Green_Tea-min-Photoroom.png" alt="milk-tea" class="drink-img">
+          <h2>Strawberry Green Tea</h2>
+          <p>$6.39 </p>
+          <button class="add-to-cart" data-name="Strawberry Green Tea" data-price="6.39">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="Fruity Flavors">
+          <img src="images\Native-Resolution 2\Orange_Green_Tea-min-Photoroom.png" alt="milk-tea" class="drink-img">
+          <h2>Peach Green Tea</h2>
+          <p>$6.39 </p>
+          <button class="add-to-cart" data-name="Peach Green Tea" data-price="6.39">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="Fruity Flavors">
+          <img src="images\Native-Resolution\IsekaiBoba_MangoCoconut.jpg" alt="milk-tea" class="drink-img">
+          <h2>Mango Coconut</h2>
+          <p>$6.99</p>
+          <button class="add-to-cart" data-name="Mango Coconut" data-price="6.99">Add to Cart</button>
+        </div>
+
+        <!-- smoothies/slushies -->
+        <div class="menu-item" data-category="Smoothies/Slushies">
+          <img src="images\Native-Resolution 2\Mango_Smoothie-min-Photoroom.png" alt="Taro Milk Tea" class="drink-img">
+          <h2>Mango Smoothie</h2>
+          <p>$6.99</p>
+          <button class="add-to-cart" data-name="Mango Smoothie" data-price="6.99">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="Smoothies/Slushies">
+          <img src="images\Native-Resolution\IsekaiBoba_WatermelonSmoothie.jpg" alt="Taro Milk Tea" class="drink-img">
+          <h2>Watermelon Smoothie</h2>
+          <p>$6.99</p>
+          <button class="add-to-cart" data-name="Watermelon Smoothie" data-price="6.99">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="Smoothies/Slushies">
+          <img src="images\Native-Resolution 2\Strawbeery_Smoothie-min-Photoroom.png" alt="Taro Milk Tea" class="drink-img">
+          <h2>Strawberry Smoothie</h2>
+          <p>$6.99</p>
+          <button class="add-to-cart" data-name="Strawberry Smoothie" data-price="6.99">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="Smoothies/Slushies">
+          <img src="images\Native-Resolution\IsekaiBoba_GrapeSmoothie.jpg" alt="Taro Milk Tea" class="drink-img">
+          <h2>Grape Smoothie</h2>
+          <p>$6.99</p>
+          <button class="add-to-cart" data-name="Grape Smoothie" data-price="6.99">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="Smoothies/Slushies">
+          <img src="images\Native-Resolution\IsekaiBoba_Cookies&CreamSmoothie.jpg" alt="Taro Milk Tea" class="drink-img">
+          <h2>Cookie and Cream Smoothie</h2>
+          <p>$6.99</p>
+          <button class="add-to-cart" data-name="Cookie and Cream Smoothie" data-price="6.99">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="Smoothies/Slushies">
+          <img src="images\Native-Resolution 2\Coffee Smoothie.jpg" alt="Taro Milk Tea" class="drink-img">
+          <h2>Coffee Smoothie</h2>
+          <p>$6.99</p>
+          <button class="add-to-cart" data-name="Coffee Smoothie" data-price="6.99">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="Smoothies/Slushies">
+          <img src="images\Native-Resolution 2\Taro_smoothies-.png" alt="Taro Milk Tea" class="drink-img">
+          <h2>Taro Smoothie</h2>
+          <p>$6.99</p>
+          <button class="add-to-cart" data-name="Taro Smoothie" data-price="6.99">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="Smoothies/Slushies">
+          <img src="images/Native-Resolution/IsekaiBoba_LycheeSmoothie.jpg" alt="Taro Milk Tea" class="drink-img">
+          <h2>Lychee Smoothie</h2>
+          <p>$6.99</p>
+          <button class="add-to-cart" data-name="Lychee Smoothie" data-price="6.99">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="Smoothies/Slushies">
+          <img src="images\Native-Resolution 2\Matcha_Smoothie-min-Photoroom.png" alt="Taro Milk Tea" class="drink-img">
+          <h2>Matcha Smoothie</h2>
+          <p>$6.99</p>
+          <button class="add-to-cart" data-name="Matcha Smoothie" data-price="6.99">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="Smoothies/Slushies">
+          <img src="images/Native-Resolution/IsekaiBoba_StrawberrySmoothie.jpg" alt="Taro Milk Tea" class="drink-img">
+          <h2>Strawberry Banana Smoothie</h2>
+          <p>$7.19</p>
+          <button class="add-to-cart" data-name="Strawberry Banana Smoothie" data-price="7.19">Add to Cart</button>
+        </div>
+
+        <div class="menu-item" data-category="Smoothies/Slushies">
+          <img src="images\Native-Resolution 2\Peach_smoothie-min-Photoroom.png" alt="Taro Milk Tea" class="drink-img">
+          <h2>Peach Smoothie (Seasonal)</h2>
+          <p>$7.59</p>
+          <button class="add-to-cart" data-name="Peach Smoothie (Seasonal)" data-price="7.59">Add to Cart</button>
+        </div>
+    
+        <!-- Brown Sugar Series -->
+        <div class="menu-item" data-category="Brown Sugar series">
+          <img src="images\Native-Resolution 2\Brown sugar milk Tea.png" alt="Brown Sugar Boba" class="drink-img">
+          <h2>Brown Sugar Milk Tea</h2>
+          <p>$6.39</p>
+          <button class="add-to-cart" data-name="Brown Sugar Boba" data-price="6.39">Add to Cart</button>
+        </div>
+    
+        <div class="menu-item" data-category="Brown Sugar series">
+          <img src="images\Native-Resolution\IsekaiBoba_BrownSugarMilk.jpg" alt="Brown Sugar Boba" class="drink-img">
+          <h2>Brown Sugar Milk</h2>
+          <p>$6.99</p>
+          <button class="add-to-cart" data-name="Brown Sugar Boba" data-price="6.99">Add to Cart</button>
+        </div>
+
+        <!-- Add more items with matching data-category -->
+      </div>
+    </div>
+    
+  </section>
+  
+
+  <!-- Slide-out Cart Panel -->
+  <div id="cart-panel" class="cart-panel hidden">
+    <h2>Your Cart</h2>
+    <ul id="cart-items-panel"></ul>
+    <p>Total: $<span id="cart-total-panel">0.00</span></p>
+    <button onclick="closeCart()">Close</button>
+  </div>
+
+  <!-- Drink Modifier Modal -->
+  <div id="modifier-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="modal-drink-name">Customize Your Drink</h2>
+      <form id="modifier-form">
+        <label>
+          Size:
+          <select name="size" required>
+            <option value="small">small</option>
+            <option value="large"selected>large</option>
+            <option value="Extra Large">Extra Large</option>
+          </select>
+        </label>
+
+        <label>
+          Milk:
+          <select name="milk">
+            <option value="Whole Milk"selected>Whole Milk</option>
+            <option value="Almond Milk">Almond Milk</option>
+            <option value="Oat Milk">Oat Milk</option>
+          </select>
+        </label>
+
+        <label>
+          Sweetness:
+          <select name="sweetness">
+            <option value="Extra Extra Sweet">Extra Extra Sweet</option>
+            <option value="Extra Sweet">Extral Sweet</option>
+            <option value="Regular"selected>Regular</option>
+            <option value="Less Sweet">Less Sweet</option>
+            <option value="No Sugar">No Sugar</option>
+          </select>
+        </label>
+
+        <label>
+          Ice Level:
+          <select name="sweetness">
+            <option value="regular"selected>Regular Ice</option>
+            <option value="Less Ice">less Ice</option>
+            <option value="No Ice">No Ice</option>
+          </select>
+        </label>
+
+        <fieldset>
+          <legend>Toppings ($0.50 each):</legend>
+          <div class="toppings-section">
+            <div class="topping-item">
+              <label for="Tapioca">Tapioca</label>
+              <input type="number" id="Tapioca" name="Tapioca" min="0" max="5" value="0">
+            </div>
+            <div class="topping-item">
+              <label for="Crystal Boba">Lychee Jelly</label>
+              <input type="number" id="Crystal Boba" name="Crystal Boba" min="0" max="5" value="0">
+            </div>
+            <div class="topping-item">
+              <label for="Mango Jelly">Mango Jelly</label>
+              <input type="number" id="Mango Jelly" name="Mango Jelly" min="0" max="5" value="0">
+            </div>
+            <div class="topping-item">
+              <label for="Strawberry Jelly">Strawberry Jelly</label>
+              <input type="number" id="Strawberry Jelly" name="Strawberry Jelly" min="0" max="5" value="0">
+            </div>
+            <div class="topping-item">
+              <label for="Passion Fruit Jelly">Passion Fruit Jelly</label>
+              <input type="number" id="Passion Fruit Jelly" name="Passion Fruit Jelly" min="0" max="5" value="0">
+            </div>
+            <div class="topping-item">
+              <label for="Coconut Jelly">Coconut Jelly</label>
+              <input type="number" id="Coconut Jelly" name="Coconut Jelly" min="0" max="5" value="0">
+            </div>
+            <div class="topping-item">
+              <label for="Lychee Jelly">Lychee Jelly</label>
+              <input type="number" id="Lychee Jellyy" name="Lychee Jelly" min="0" max="5" value="0">
+            </div>
+            <div class="topping-item">
+              <label for="Rainbow Jelly">Rainbow Jelly</label>
+              <input type="number" id="Rainbow Jelly" name="Rainbow Jelly" min="0" max="5" value="0">
+            </div> 
+            <div class="topping-item">
+              <label for="Passion Fruit Pop">Passion Fruit Pop</label>
+              <input type="number" id="Passion Fruit Pop" name="Passion Fruit Pop" min="0" max="5" value="0">
+            </div>
+            <div class="topping-item">
+              <label for="Lychee Pop">Lychee Pop</label>
+              <input type="number" id="Lychee Pop" name="Lychee Pop" min="0" max="5" value="0">
+            </div>
+            <div class="topping-item">
+              <label for="Strawberry Pop">Strawberry Pop</label>
+              <input type="number" id="Strawberry Pop" name="Strawberry Pop" min="0" max="5" value="0">
+            </div>
+            <div class="topping-item">
+              <label for="Mango Pop">Mango Pop</label>
+              <input type="number" id="Mango Pop" name="Mango Pop" min="0" max="5" value="0">
+            </div>
+            <div class="topping-item">
+              <label for="Dragonfruit Pop">Dragonfruit Pop</label>
+              <input type="number" id="Dragonfruit Pop" name="Dragonfruit Pop" min="0" max="5" value="0">
+            </div>
+          </div>
+          
+        </fieldset>
+
+        <fieldset>
+          <legend>Toppings ($0.75 each):</legend>
+          <div class="toppings-section">
+            <div class="topping-item">
+              <label for="Crema">Crema</label>
+              <input type="number" id="boba" name="boba" min="0" max="2" value="0">
+            </div>
+            <div class="topping-item">
+              <label for="Mango Jelly">Mango Jelly</label>
+              <input type="number" id="Crystal Boba" name="Crystal Boba" min="0" max="5" value="0">
+            </div>
+          </div>
+          
+        </fieldset>
+
+        <label>
+          Notes:
+          <textarea name="notes" placeholder="Any special requests?"></textarea>
+        </label>
+
+        <button type="submit">Add to Cart</button>
+        <button type="button" onclick="closeModal()">Cancel</button>
+      </form>
+    </div>
+  </div>
+
+<footer class="footer">
+
+  <div class="social-icons">
+    <a href="https://facebook.com/yourpage" target="_blank" aria-label="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/isekaiboba/?igsh=a3p0NjBhOWJ2ZWRk&utm_source=qr" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://tiktok.com/@yourpage" target="_blank" aria-label="TikTok">
+      <i class="fab fa-tiktok"></i>
+    </a>
+  </div>
+  <p>&copy; 2025 Isekai Boba. All rights reserved.</p>
+</footer>
+
+  <!-- JS File -->
+  <script src="script.js"></script>
+</body>
+</html>
